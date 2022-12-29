@@ -1,0 +1,121 @@
+body {
+    background: #262626;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, li {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.box-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    border-radius: 70px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 40px;
+    transition:  .3s;
+}
+
+.single-box-larger {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    border-radius: 70px;
+    background-color: #85d673;
+    text-align: center;
+    margin: 20px;
+    padding: 50px;
+    transition:  .3s;
+}
+
+.img-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #85d673;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-area-larger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 50px;
+}
+
+/*  
+    Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a> on <a href="https://unsplash.com/s/photos/cartoon-cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/
+.single-box:nth-child(2) .img-area {
+    background-image: url(images/1.jpg);
+}
+
+/*
+    Photo by <a href="https://unsplash.com/@hesterqiang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hester Qiang</a> on <a href="https://unsplash.com/s/photos/cartoon-cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/
+.single-box:nth-child(3) .img-area {
+    background-image: url(images/2.jpg);
+}
+
+/*
+    Photo by <a href="https://unsplash.com/@charliefirth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charlie Firth</a> on <a href="https://unsplash.com/s/photos/lucky-cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/
+.single-box:nth-child(4) .img-area {
+    background-image: url(images/3.jpg);
+}
+
+.header-plan {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+}
+
+.header-price {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    float: right;
+}
+
+.img-text {
+    padding-top: 20px;
+}
+
+.img-text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.single-box:hover {
+    background-color: #85d673;
+    color: #fff;
+}
